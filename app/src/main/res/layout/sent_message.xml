@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".notification.SentMessage">
+
+    <TextView
+        android:id="@+id/batchCreation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#320B39"
+        android:layout_gravity="center"
+        android:text="Sent Message to All" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/admin_gradient_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sentmsg"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:textColor="#191818"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"
+                android:text="ENTER BRIEF MESSAGE :" />
+
+            <EditText
+                android:id="@+id/msgContent"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="top|left"
+                android:lines="10"
+                android:scrollbars="vertical"
+                android:layout_marginRight="20dp"
+                android:background="#F3F6F6"
+                android:hint="Brief message goes here"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"></EditText>
+
+
+            <Button
+                android:id="@+id/batchAddBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#290D5A"
+                android:onClick="sentmsg"
+                android:textColor="#FBFBFB"
+                android:layout_marginBottom="20dp"
+                android:text="Sent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/backToManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A61A10"
+                    android:onClick="bactToManagement"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"
+                    android:text="Back To Management" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

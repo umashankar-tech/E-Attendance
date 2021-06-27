@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60678A"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".studentpart.StudentPartLogin">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="25dp"
+                android:background="#C0D8EC"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="22dp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#370415"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Student Login " />
+                <TextView
+                    android:id="@+id/mailtextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:textColor="#370415"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Enter Your Mail ID" />
+                <EditText
+                    android:id="@+id/studentloginMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#F3F6F6"
+                    android:hint="Enter Mail ID"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"></EditText>
+
+                <TextView
+                    android:id="@+id/passwordtextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:textColor="#370415"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Enter Your Password" />
+                <EditText
+                    android:id="@+id/studentLoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#F3F6F6"
+                    android:hint="Enter Password"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"></EditText>
+
+                <Button
+                    android:id="@+id/studentLoginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#1F285A"
+                    android:textColor="#FFFEFE"
+                    android:onClick="goToStuAttSubjectList"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LogIn" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="normal"
+                    android:textColor="#553405"
+                    android:layout_margin="15dp"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forget?/ResetPassword" />
+            </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>

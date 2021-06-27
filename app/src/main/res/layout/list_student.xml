@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    tools:context=".ListStudent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#343F63"
+        android:padding="11dp"
+        android:orientation="vertical">
+    <TextView
+
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#DCDFEF"
+        android:layout_height="wrap_content"
+        android:text="Attendance" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/subjectView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Subject:" />
+
+        <TextView
+            android:id="@+id/subjectview12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="4dp"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/subjectcode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Subject Code:" />
+
+        <TextView
+            android:id="@+id/subjectCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="#FDFCFC"
+            android:layout_marginLeft="4dp"
+            android:text="TextView" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="#DCDFEF"
+            android:layout_height="wrap_content"
+            android:text="Date:" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#DCDFEF"
+            android:layout_height="wrap_content"
+            android:text="22.1.2021" />
+        <TextView
+            android:id="@+id/attTotalText"
+            android:layout_marginLeft="65dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#DCDFEF"
+            android:layout_height="wrap_content"
+            android:text="Total Present:" />
+
+        <TextView
+            android:id="@+id/attTotalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:text="0"
+            android:textColor="#DCDFEF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2E2EF"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+      >
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="#0C0C0C"
+        android:text="Student  List" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:backgroundTint="#071353"
+            android:layout_width="wrap_content"
+            android:onClick="attendanceSubmitted"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="SUBMIT" />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stuRecyclerView"
+       android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+</LinearLayout>

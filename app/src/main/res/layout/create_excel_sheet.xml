@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".upload_pdff_ile.CreateExcelSheet">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D6D6D6"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textColor="#611C34"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Select Stream" ></TextView>
+
+            <Spinner
+                android:id="@+id/selectStream"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:backgroundTint="#C84343"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/yearView"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                android:textColor="#611C34"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Select Year" />
+
+            <Spinner
+                android:id="@+id/selectYear"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                android:textColor="#611C34"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Select Semester " />
+
+            <Spinner
+                android:id="@+id/selectSemester"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:backgroundTint="#C84343"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/sectionView"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                android:textColor="#611C34"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Select Section" />
+
+            <Spinner
+                android:id="@+id/selectSection"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:backgroundTint="#C84343"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textView148"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                android:textColor="#611C34"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Select Subject" />
+
+            <Spinner
+                android:id="@+id/selectSubject"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/DateView"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                android:textColor="#611C34"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Select Date" />
+
+            <Spinner
+                android:id="@+id/selectDate"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#FBF9F9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createExcelSheet"
+        android:backgroundTint="#113B5C"
+        android:layout_marginBottom="30dp"
+        android:text="Create Report" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

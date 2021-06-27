@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".studentpart.AttThreeYearAcrivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/atttextView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#090909"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/att_attendance_name_gradient"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                android:text="Three Year Stream" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/att_attendance_name_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/attfirstYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="First Year"
+                    android:textColor="#090909"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/attsecondSem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="85dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#131313"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Second II Semester" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_corner_radius"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/attsecyear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#FBF8F7"
+                        android:onClick="goTo2ndSemSecA"
+                        android:text="Section-A"
+                        android:textColor="#0C0C0C"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/attthirdyear"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#0C0C0C"
+                        android:backgroundTint="#FBFAFA"
+                        android:onClick="goTo2ndSemSecB"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Section-B" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/att_attendance_name_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/attsecondYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Second Year "
+                    android:textColor="#090909"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/attfourthSem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingLeft="85dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#131313"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Fourth IV Semester" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_corner_radius"
+                    android:layout_marginBottom="7dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/attsectionA"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#FBF8F7"
+                        android:onClick="goToSecYear4thSemSecA"
+                        android:text="Section-A"
+                        android:textColor="#0C0C0C"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/attsecB"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#0C0C0C"
+                        android:layout_marginRight="5dp"
+                        android:backgroundTint="#FBFAFA"
+                        android:onClick="goToSecYear4thSemSecB"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Section-B" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/att_attendance_name_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/attfirstyear"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Third Year "
+                    android:textColor="#090909"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/atttextView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="85dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#131313"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Sixth VI Semester" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_corner_radius"
+                    android:layout_marginBottom="7dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/attsec3a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:backgroundTint="#FBF8F7"
+                        android:onClick="goToThirdYear6thSemSecA"
+                        android:text="Section-A"
+                        android:textColor="#0C0C0C"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/attsec3b"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#0C0C0C"
+                        android:backgroundTint="#FBFAFA"
+                        android:onClick="goToThirdYear6thSemSecB"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Section-B" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

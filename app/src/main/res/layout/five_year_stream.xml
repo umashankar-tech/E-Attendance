@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".FiveYearStream">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#101010"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/addstudenttitle_gradient"
+                android:layout_marginBottom="10dp"
+                android:textSize="25dp"
+                android:text="Five Year Stream" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/addstudentbackground_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/firstYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+                    android:onClick="goToSubjectFirstYear"
+                    android:paddingRight="20dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="First Year"
+                    android:textColor="#090909"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/secondSem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:onClick="goToSubjectFirstYear"
+                    android:paddingTop="4dp"
+                    android:height="40dp"
+                    android:paddingLeft="85dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#131313"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Second II Semester" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/addstudentbackground_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/secondYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:onClick="goToSubjectSecondYear"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Second Year "
+                    android:textColor="#090909"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/fourthSem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp"
+                    android:onClick="goToSubjectSecondYear"
+                    android:height="40dp"
+                    android:paddingLeft="85dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#131313"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Fourth IV Semester" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/addstudentbackground_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/firstyear"
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+                    android:onClick="goToSubjectThirdYear"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Third Year "
+                    android:textColor="#090909"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/sixthsem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:onClick="goToSubjectThirdYear"
+                    android:paddingTop="4dp"
+                    android:height="40dp"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#131313"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Sixth VI Semester" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/addstudentbackground_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fourthyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:onClick="goToSubjectFourthYear"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Fourth Year "
+                    android:textColor="#090909"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp"
+                    android:height="40dp"
+                    android:onClick="goToSubjectFourthYear"
+                    android:paddingLeft="85dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#131313"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Eigth VIII Semester" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/addstudentbackground_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fifthyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+                    android:onClick="goToSubjectFifthYear"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Fifth Year "
+                    android:textColor="#090909"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/eightsem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:onClick="goToSubjectFifthYear"
+                    android:paddingTop="4dp"
+                    android:height="40dp"
+                    android:paddingLeft="85dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#131313"
+                    android:background="@drawable/layout_corner_radius"
+                    android:text="Tenth X Semester" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

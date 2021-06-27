@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFBFB"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".upload_pdff_ile.UploadPdfFile">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D6D6D6"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textColor="#731938"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Select Batch" ></TextView>
+
+            <Spinner
+                android:id="@+id/spinnerbatchfile"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:backgroundTint="#C84343"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                android:textColor="#731938"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Select Year " />
+
+            <Spinner
+                android:id="@+id/yearFile"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:backgroundTint="#C84343"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textView148"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                android:textColor="#731938"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Select Smester" />
+
+            <Spinner
+                android:id="@+id/semesterfile"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:textSize="20sp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                android:textColor="#070707"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Enter File Name" />
+
+            <EditText
+                android:id="@+id/fileNamefile"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:background="#F3F6F6"
+                android:hint="Enter File Name"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"></EditText>
+            <TextView
+                android:id="@+id/textView13456"
+                android:layout_marginTop="13dp"
+                android:textSize="18dp"
+                android:textColor="#070707"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Give File Path" />
+
+            <EditText
+                android:id="@+id/filePathfile"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:background="#F3F6F6"
+                android:hint="Give Path"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"></EditText>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:backgroundTint="#1F5670"
+        android:layout_marginTop="10dp"
+        android:onClick="submit"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

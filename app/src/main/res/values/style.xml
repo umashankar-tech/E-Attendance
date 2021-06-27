@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customSuccessToast">
+        <item name="colorBackground">#084149</item>
+        <item name="textColor">#FFFEFE</item>
+        <item name="length">LONG</item>
+        <item name="iconLeft">@drawable/ic_baseline_thumb_up_24</item>
+    </style>
+    <style name="customFailureToast">
+        <item name="colorBackground">#084149</item>
+        <item name="textColor">#FFFEFE</item>
+        <item name="length">LONG</item>
+        <item name="iconLeft">@drawable/ic_baseline_thumb_down_24</item>
+    </style>
+</resources>

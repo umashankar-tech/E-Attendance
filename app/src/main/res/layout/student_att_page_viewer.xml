@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/layoutgradient_color"
+    android:layout_gravity="center"
+    tools:context=".studentpart.StudentAttPageViewer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/att_attendance_name_gradient"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/subjectName"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/addstudentbackground_gradient"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="Attendance " />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:paddingLeft="6dp">
+
+        <TextView
+            android:id="@+id/totalPresent"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:textColor="#1C024A"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="TOTAL PRESENT:" />
+
+        <TextView
+            android:id="@+id/totalpresentcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:padding="3dp"
+            android:textStyle="bold"
+            android:textColor="#1C024A"
+            android:text="0" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="6dp">
+
+        <TextView
+            android:id="@+id/totalAbsent"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:textColor="#1C024A"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:text="TOTAL ABSENT:" />
+
+        <TextView
+            android:id="@+id/totalAbsentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:padding="3dp"
+            android:textStyle="bold"
+            android:textColor="#1C024A"
+            android:text="0" />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:paddingLeft="6dp">
+
+            <TextView
+                android:id="@+id/totalCounductedClasses"
+                android:layout_width="match_parent"
+                android:textSize="15dp"
+                android:textColor="#1C024A"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="TOTAL CONDUCTED CLASSES:" />
+
+            <TextView
+                android:id="@+id/totalCounductedClassesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textColor="#1C024A"
+                android:text="0" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:paddingLeft="6dp">
+
+            <TextView
+                android:id="@+id/totalpercentage"
+                android:layout_width="match_parent"
+                android:textSize="17dp"
+                android:textColor="#1C024A"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:text="ATTENDANCE PERCENTAGE" />
+
+            <TextView
+                android:id="@+id/totalpercentageInNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:textColor="#1C024A"
+                android:text="0" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_gravity="center"
+            android:textColor="#650909"
+            android:textSize="19dp"
+            android:onClick="goback"
+            android:textStyle="bold"
+            android:text="Go back"
+            android:layout_marginLeft="0dp">
+        </TextView>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:background="#1F064A"
+            android:textColor="#FBFAFA"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:textStyle="bold"
+            android:onClick="logout"
+            android:paddingRight="12dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="20dp"
+            android:text="Log Out" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:gravity="center"
+    android:background="#E3E0E1"
+    tools:context=".TeacherCreation">
+
+
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/facultyRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="5dp"
+        android:textStyle="bold"
+        android:background="@drawable/admin_button_gradient_color"
+        android:textSize="20dp"
+        android:textColor="#FFFDFD"
+        android:text="Teacher Creation" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp">
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/admin_gradient_color"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+        <EditText
+            android:id="@+id/teacherName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#F3F6F6"
+            android:hint="Enter Teacher Name"
+            android:inputType="text"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"></EditText>
+
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#F3F6F6"
+            android:hint="Enter D.O.B"
+            android:inputType="text"
+
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"></EditText>
+        <EditText
+            android:id="@+id/qualification"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:background="#F3F6F6"
+            android:hint="Enter Qualification"
+            android:inputType="text"></EditText>
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#F3F6F6"
+            android:hint="Enter teacher Mailid"
+            android:inputType="textEmailAddress"
+
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"></EditText>
+        <EditText
+            android:id="@+id/password23"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#F3F6F6"
+            android:paddingLeft="20dp"
+            android:hint="Enter password"
+            android:inputType="text"></EditText>
+        <Button
+            android:id="@+id/addFacultyCreation"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="94dp"
+            android:backgroundTint="#401847"
+            android:onClick="addTeacher"
+            android:textColor="#F8F7F7"
+            android:text="Add Teacher"
+            android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/backToManagement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/admin_button_gradient_color"
+                        android:onClick="bactToManagement"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="17dp"
+                        android:text="BackTo Management" />
+
+
+                </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+    </LinearLayout>
+

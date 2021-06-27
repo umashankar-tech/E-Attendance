@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "846500983799",
+    "project_id": "collegeattendance-1d09f",
+    "storage_bucket": "collegeattendance-1d09f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846500983799:android:905a5065e6a8bf951834f2",
+        "android_client_info": {
+          "package_name": "com.example.collegeattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846500983799-njmvk4csvcdiekjj3fruqph0vtet8fk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG3KCRMGC4Ye0iCilkHOGMXQpUmyShKF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846500983799-njmvk4csvcdiekjj3fruqph0vtet8fk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

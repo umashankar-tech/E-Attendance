@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".studentpart.AttSubjectlist">
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="104dp"
+        android:layout_height="65dp"
+        app:srcCompat="@drawable/booklogo" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#B54242"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="2dp"
+        android:layout_gravity="center"
+        android:text="Subject List"
+        android:textColor="#FCFFFF" />
+    <View
+        android:layout_marginTop="13dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#0A5F6A"
+        android:layout_height="2dp"></View>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/attbatchesRecylerView"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

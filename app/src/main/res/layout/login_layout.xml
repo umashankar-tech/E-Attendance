@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_marginTop="10dp"
+        android:layout_width="74dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/adminlogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Administration SignIn"
+        android:textColor="#4C0D57"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="14dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/admin_gradient_color"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Enter Mail ID" />
+
+            <EditText
+                android:id="@+id/emailId"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"></EditText>
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:text="Enter Password" />
+
+            <EditText
+                android:id="@+id/loginpassword"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:hint="Enter Your Password"
+                android:inputType="numberPassword"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"></EditText>
+
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:backgroundTint="#831B1B"
+                android:layout_marginTop="20dp"
+                android:onClick="goToHomePage"
+                android:text="Sign In"
+                android:textColor="#FBFBFB" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="19dp"
+                android:layout_marginBottom="30dp"
+                android:onClick="goToRegisterPage"
+                android:text="Have acoount? Go to SIGN IN"
+                android:textColor="#AF2E25"></TextView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addstudentbackground_gradient"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".StreamActivity">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:textColor="#03373E"
+        android:background="@drawable/layout_corner_radius"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:text="Streams" />
+
+    <LinearLayout
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_corner_radius"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/button2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:onClick="goToThreeYearStream"
+        android:background="@color/white"
+        android:textSize="20dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Three Year Stream" />
+
+    <TextView
+        android:id="@+id/button3"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:background="@color/white"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="goToFiveYearStream"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Five Year Stream" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:paddingRight="20dp"
+            android:paddingLeft="10dp"
+            android:onClick="goBack"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Go back "/>
+    </LinearLayout>
+</LinearLayout>

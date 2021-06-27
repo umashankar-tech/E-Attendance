@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.collegeattendance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/collegeapplogo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CollegeAttendance">
+        <activity android:name=".upload_pdff_ile.CreateExcelSheet"></activity>
+        <activity android:name=".notification.ViewMessage" />
+        <activity android:name=".notification.SentMessage" />
+        <activity android:name=".notification.PushNotification" />
+        <activity android:name=".studentpart.PdfViewer" />
+        <activity android:name=".studentpart.StudentAttPageViewer" />
+        <activity android:name=".studentpart.AttSubjectlist" />
+        <activity android:name=".studentpart.AttFiveYearActivityStream" />
+        <activity android:name=".studentpart.AttThreeYearAcrivity" />
+        <activity android:name=".studentpart.ViewAttBySubjects" />
+        <activity android:name=".studentpart.StudentSubjectListToGetAttPer" />
+        <activity android:name=".upload_pdff_ile.UploadPdfFile" />
+        <activity android:name=".studentpart.StudentPartLogin" />
+        <activity
+            android:name=".FiveYearStream"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".PageToTeacherLogin" />
+        <activity android:name=".ThreeYearStream" />
+        <activity android:name=".StreamActivity" />
+        <activity
+            android:name=".ListStudent"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".SubjectList" />
+        <activity android:name=".ListBatchToTeacher" />
+        <activity android:name=".WelcomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TeacherLogin" />
+        <activity android:name=".Student" />
+        <activity android:name=".Subject" />
+        <activity android:name=".TeacherCreation" />
+        <activity android:name=".Batches" />
+        <activity android:name=".Login" />
+        <activity android:name=".AdminMangement" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
